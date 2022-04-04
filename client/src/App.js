@@ -4,6 +4,8 @@ import {Routes,Route} from 'react-router-dom'
 import Home from './routes/Home'
 import Patient from './routes/Patient'
 import Doctor from './routes/Doctor'
+import PatientDashboard from './routes/PatientDashboard'
+import DoctorDashboard from './routes/DoctorDashboard'
 import Decentralized from "./contracts/Decentralized.json";
 import getWeb3 from "./getWeb3";
 
@@ -136,7 +138,15 @@ const App = () => {
     return (
       <div>
         <h3>{owner}</h3>
+        
         <Routes>
+
+
+          <Route path="/testPatient" element={<PatientDashboard 
+          />}/>
+
+          <Route path="/testDoctor" element={<DoctorDashboard 
+          />}/>
 
           <Route path='/' element={<Home 
             name={name} 

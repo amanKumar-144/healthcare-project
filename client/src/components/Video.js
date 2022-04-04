@@ -5,9 +5,9 @@ import healthcareVideo from "../assets/healthcareVideo.mp4"
 const Video = (props) => {
   return (
         <div className='hero'>
-            <video autoPlay loop muted id='video'>
+            {/*<video autoPlay loop muted id='video'>
                 <source src={healthcareVideo} type='video/mp4'/>
-  </video>
+            </video>*/}
 
             <div className='content'>
                 <h1>Consent Management System</h1>
