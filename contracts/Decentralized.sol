@@ -95,8 +95,7 @@ contract Decentralized {
         emit removeNomineeTest(n1.patientId,n1.patientPassword,n1.patientAddress,0);
     }
 
-
-
+  
     event createDoctorTest(
         uint doctorId,
         string doctorPassword,
